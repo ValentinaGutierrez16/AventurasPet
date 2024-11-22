@@ -1,0 +1,213 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c7fffec6; /* Fondo turquesa pastel */
+    color: #444; /* Texto gris oscuro */
+    padding-left: 40px; /* Espacio a la izquierda */
+    padding-right: 40px; /* Espacio a la derecha */
+}
+
+/* Header */
+header {
+    background-color: hsl(356, 100%, 95%); /* Rosado pastel */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Alinea el logo y el avatar */
+    align-items: center;
+    border-bottom: 2px solid #ffccd5; /* Línea decorativa */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Más espacio entre el logo y el título */
+}
+
+header .logo img {
+    height: 150px; /* Tamaño más grande para el logo */
+    width: auto; /* Mantiene las proporciones del logo */
+}
+
+header .logo h1 {
+    color: #008080;
+    font-size: 48px; /* Aumenta el tamaño del título */
+    margin: 0;
+}
+
+
+/* Centrar el avatar dentro del header */
+header .avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Hace que el avatar sea redondo */
+}
+
+/* Estilos para las pestañas (Inicio, Nosotros, Servicios, Productos) */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra las pestañas */
+    align-items: center;
+    border-top: 2px solid #ffccd5; /* Línea decorativa */
+    padding-left: 10px;  /* Ajuste del espacio izquierdo en las pestañas */
+    padding-right: 10px; /* Ajuste del espacio derecho en las pestañas */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative; /* Para el efecto de pestaña */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff6f61; /* Coral pastel */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0; /* Bordes redondeados solo en la parte superior */
+    background-color: #fff; /* Fondo blanco para las pestañas */
+    display: block;
+    transition: background-color 0.3s, border-bottom 0.3s; /* Efecto al pasar el mouse */
+}
+
+nav ul li a:hover {
+    background-color: #ffccd5; /* Rosado claro */
+    border-bottom: 3px solid #ff6f61; /* Línea de color coral al pasar el mouse */
+}
+
+/* Secciones principales */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff; /* Fondo blanco para contraste */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de sección */
+section h2 {
+    text-align: center;
+    color: #008080;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+/* Ajustes para las cajas de Misión, Visión y Objetivos */
+.about-horizontal {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.about-horizontal .box {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-horizontal .box h3 {
+    text-align: center; /* Centra los títulos */
+    color: #ff8c94; /* Rosado salmón pastel */
+}
+
+/* Productos y servicios en cuadrícula */
+.services-grid, .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px; /* Más espacio entre elementos */
+    margin-top: 20px; /* Separación del título */
+}
+
+.service-item, .product-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaciado interno entre contenido */
+    justify-content: space-between; /* Distribuir el contenido */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animación suave */
+}
+
+.service-item:hover, .product-item:hover {
+    transform: translateY(-5px); /* Efecto flotante */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-item img, .product-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 10px; /* Espacio entre el texto y la imagen */
+}
+
+.service-item h3, .product-item h3 {
+    font-size: 20px;
+    color: #ff8c94;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Separación entre las secciones de servicios y productos */
+.services-section, .products-section {
+    margin-bottom: 40px;
+}
+
+/* Juegos */
+.games-content {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.scratch-game, .kahoot-quiz {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulario de contacto */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #ff4d42;
+}
