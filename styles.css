@@ -222,14 +222,16 @@ section h2 {
 
 .social-links {
     display: flex; /* Alineación horizontal */
-    gap: 10px; /* Espaciado entre los íconos */
+    /*justify-content: center; /* Centrar los íconos */
+    gap: 15px; /* Espaciado entre los íconos */
     margin-top: 20px;
 }
 
 .social-links img {
-    width: 50px; /* Tamaño uniforme de los íconos */
-    height: 50px; /* Tamaño uniforme de los íconos */
-   /* transition: transform 0.2s ease; /* Efecto hover */
+    width: 40px; /* Tamaño uniforme de los íconos */
+    height: 40px; /* Tamaño uniforme de los íconos */
+    border-radius: 5px; /* Opcional: bordes ligeramente redondeados */
+    transition: transform 0.2s ease; /* Efecto hover */
 }
 
 .social-links img:hover {
