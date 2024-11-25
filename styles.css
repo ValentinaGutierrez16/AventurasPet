@@ -219,3 +219,20 @@ section h2 {
     display: block;
     border: 2px solid #ffccd5; /* Bordes decorativos */
 }
+
+.social-links {
+    display: flex; /* Alineación horizontal */
+    gap: 15px; /* Espaciado entre los íconos */
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 60px; /* Tamaño uniforme de los íconos */
+    height: 60px; /* Tamaño uniforme de los íconos */
+    border-radius: 5px; /* Opcional: bordes ligeramente redondeados */
+    transition: transform 0.2s ease; /* Efecto hover */
+}
+
+.social-links img:hover {
+    transform: scale(1.1); /* Agrandamiento al pasar el cursor */
+}
