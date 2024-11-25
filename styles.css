@@ -222,14 +222,14 @@ section h2 {
 
 .social-links {
     display: flex; /* Alineación horizontal */
-    gap: 15px; /* Espaciado entre los íconos */
+    gap: 10px; /* Espaciado entre los íconos */
     margin-top: 20px;
 }
 
 .social-links img {
     width: 50px; /* Tamaño uniforme de los íconos */
     height: 50px; /* Tamaño uniforme de los íconos */
-    transition: transform 0.2s ease; /* Efecto hover */
+   /* transition: transform 0.2s ease; /* Efecto hover */
 }
 
 .social-links img:hover {
