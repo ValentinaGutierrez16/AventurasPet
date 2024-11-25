@@ -228,8 +228,8 @@ section h2 {
 }
 
 .social-links img {
-    width: 40px; /* Tamaño uniforme de los íconos */
-    height: 40px; /* Tamaño uniforme de los íconos */
+    width: 60px; /* Tamaño uniforme de los íconos */
+    height: 60px; /* Tamaño uniforme de los íconos */
     border-radius: 5px; /* Opcional: bordes ligeramente redondeados */
     transition: transform 0.2s ease; /* Efecto hover */
 }
